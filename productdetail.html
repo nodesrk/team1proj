@@ -9,7 +9,9 @@
     <script
     src="https://kit.fontawesome.com/0e53af926d.js"
     crossorigin="anonymous"
-  ></script>
+
+  >
+</script>
 </head>
 <body>
     <header>
@@ -26,13 +28,60 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="research.html">Research</a></li>
+                <li><a href="research.html">Cart</a></li>
               </ul>
             </nav>
-            <div class="header-list-icon">
-              <a href=""><i class="fa fa-bag-shopping"></i></a>
-            </div>
+
           </div>
         </div>
       </header>
+      <section id="wow">
+        <div>
+          <div>
+
+            <img src="./images/products/cam1.jpg" alt="">
+          </div>
+          <div >
+            <img style="width: 90px; height: 90px;" src="./images/products/cam1.jpg" alt="">
+            <img style="width: 90px; height: 90px;" src="./images/products/cam1.jpg" alt="">
+            <img style="width: 90px; height: 90px;" src="./images/products/cam1.jpg" alt="">
+
+          </div>
+
+        </div>
+        <div class="rightpro">
+          <h3>Cannon</h3>
+          <h2>EOS-200D</h2>
+          <span style="color:black">⭐⭐⭐⭐</span>
+          <h3 style="margin-top: 1rem; margin-bottom: 1rem;">Rs 120,000</h3>
+          <button onclick="increment()">+</button>
+          <input placeholder="0" style="width: 3rem; height: 1.5rem;" id=demoInput type=number min=0 max=100>
+<button onclick="decrement()">-</button>
+<br>
+<button style="width: 5rem; background-color: black; color: white; margin-top: 1rem;">
+  To Cart
+  </button>
+   <div style="margin-top: 2rem;">
+    <h3>Description</h3>
+    <p>Meet the Canon EOS R50, the new RF-mount successor to <br> the EOS M50 Mark II that was a hit among bloggers.<br>  
+      Recording video in 4K 30p (6K oversampled) or <br> Full HD 120p with the lightweight Canon EOS R50<br>  gives you more room to express your creative abilities.
+    </p>
+
+   </div>
+
+        </div>
+
+      </section>
+      <section class="suggetion" style="height: 30vh;">
+
+      </section>
+      <script>
+        function increment() {
+           document.getElementById('demoInput').stepUp();
+        }
+        function decrement() {
+           document.getElementById('demoInput').stepDown();
+        }
+     </script>
 </body>
 </html>
