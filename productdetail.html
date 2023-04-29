@@ -1,126 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Product Detail</title>
     <script
-    src="https://kit.fontawesome.com/0e53af926d.js"
-    crossorigin="anonymous"
-
-  >
-</script>
-</head>
-<body>
+      src="https://kit.fontawesome.com/0e53af926d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header>
-        <div id="header">
-          <div class="header-logo">
-            <a href="indext.html"><img src="images/Frame 5.png" alt="" /></a>
-          </div>
-          <div class="header-list">
-            <nav class="header-list-nav">
-              <ul>
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="product.html">Product</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="research.html">Cart</a></li>
-              </ul>
-            </nav>
-
-          </div>
+      <div id="header">
+        <div class="header-logo">
+          <a href="indext.html"><img src="images/Frame 5.png" alt="" /></a>
         </div>
-      </header>
-      <section id="wow">
+        <div class="header-list">
+          <nav class="header-list-nav">
+            <ul>
+              <li><a class="active" href="index.html">Home</a></li>
+              <li><a href="product.html">Product</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="research.html">Research</a></li>
+              <li> <a>Cart (<span id="cartspan">0</span>)</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section id="wow">
+      <div>
         <div>
-          <div>
-
-            <img src="./images/products/cam1.jpg" alt="">
-          </div>
-          <div >
-            <img style="width: 90px; height: 90px;" src="./images/products/cam1.jpg" alt="">
-            <img style="width: 90px; height: 90px;" src="./images/products/cam1.jpg" alt="">
-            <img style="width: 90px; height: 90px;" src="./images/products/cam1.jpg" alt="">
-
-          </div>
-
+          <img src="./images/products/cam1.jpg" alt="" />
         </div>
-        <div class="rightpro">
-          <h3>Cannon</h3>
-          <h2>EOS-200D</h2>
-          <span style="color:black">⭐⭐⭐⭐</span>
-          <h3 style="margin-top: 1rem; margin-bottom: 1rem;">Rs 120,000</h3>
-          <button onclick="increment()">+</button>
-          <input placeholder="0" style="width: 3rem; height: 1.5rem;" id=demoInput type=number min=0 max=100>
-<button onclick="decrement()">-</button>
-<br>
-<button style="width: 5rem; background-color: black; color: white; margin-top: 1rem;">
-  To Cart
-  </button>
-   <div style="margin-top: 2rem;">
-    <h3>Description</h3>
-    <p>Meet the Canon EOS R50, the new RF-mount successor to <br> the EOS M50 Mark II that was a hit among bloggers.<br>  
-      Recording video in 4K 30p (6K oversampled) or <br> Full HD 120p with the lightweight Canon EOS R50<br>  gives you more room to express your creative abilities.
-    </p>
-
-   </div>
-
+        <div>
+          <img
+            style="width: 90px; height: 90px"
+            src="./images/products/cam1.jpg"
+            alt=""
+          />
+          <img
+            style="width: 90px; height: 90px"
+            src="./images/products/cam1.jpg"
+            alt=""
+          />
+          <img
+            style="width: 90px; height: 90px"
+            src="./images/products/cam1.jpg"
+            alt=""
+          />
         </div>
+      </div>
+      <div class="rightpro">
+        <h3>Cannon</h3>
+        <h2>EOS-200D</h2>
+        <span style="color: black">⭐⭐⭐⭐</span>
+        <h3 style="margin-top: 1rem; margin-bottom: 1rem">Rs 120,000</h3>
+        <button onclick="increment()">+</button>
+        <input
+          placeholder="0"
+          style="width: 3rem; height: 1.5rem"
+          id="demoInput"
+          type="number"
+          min="0"
+          max="100"
+        />
+        <button onclick="decrement()">-</button>
+        <br />
+        <button onclick="cart()"
+          style="
+            width: 5rem;
+            background-color: black;
+            color: white;
+            margin-top: 1rem;
+            cursor: pointer;
+          "
+        >
+          To Cart
+        </button>
+        <div style="margin-top: 2rem">
+          <h3>Description</h3>
+          <p>
+            Meet the Canon EOS R50, the new RF-mount successor to <br />
+            the EOS M50 Mark II that was a hit among bloggers.<br />
+            Recording video in 4K 30p (6K oversampled) or <br />
+            Full HD 120p with the lightweight Canon EOS R50<br />
+            gives you more room to express your creative abilities.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="product-section" class="section-p1">
+      <h1>Popular Products</h1>
+      <p>Best camera in market</p>
+      <div class="pro-collection">
+        <div class="product-cart">
+          <a href="">
+            <img src="images/products/cam1.jpg" alt="product image" />
+            <span>Canon</span>
+            <h4>EOS 1500D</h4>
+            <h4 class="price">$78</h4>
 
-      </section>
-        <section class="product-section" class="section-p1">
-          <h1>Popular Products</h1>
-          <p>Best camera in market</p>
-          <div class="pro-collection">
-            <div class="product-cart">
-              <a href="productdetail.html">
-                
-                <img src="images/products/cam1.jpg" alt="product image" />
-                <span>Canon</span>
-                <h4>EOS 1500D</h4>
-                <h4 class="price">$78</h4>
-                
-                <button style="width:100%; padding: 0.4rem; background-color: white; cursor: pointer; border-radius: 0.5rem;">To cart</button>
-              </a>
-            </div>
-            <div class="product-cart">
-              <img src="images/products/cam1.jpg" alt="product image" />
-              <span>adidas</span>
-              <h4>Cartoon Astronaut T-Shirts</h4>
+          </a>
+          <button onclick="cart()"
+            style="
+              width: 100%;
+              padding: 0.4rem;
+              background-color: white;
+              cursor: pointer;
+              border-radius: 0.5rem;
+            "
+          >
+            To cart
+          </button>
+        </div>
+        <div class="product-cart">
+          <img src="images/products/cam1.jpg" alt="product image" />
+          <span>adidas</span>
+          <h4>Cartoon Astronaut T-Shirts</h4>
 
-              <h4 class="price">$78</h4>
-              <button style="width:100%; padding: 0.4rem; background-color: white; cursor: pointer; border-radius: 0.5rem;">To cart</button>
+          <h4 class="price">$78</h4>
+          <button
+            style="
+              width: 100%;
+              padding: 0.4rem;
+              background-color: white;
+              cursor: pointer;
+              border-radius: 0.5rem;
+            "
+          >
+            To cart
+          </button>
+        </div>
+        <div class="product-cart">
+          <img src="images/products/cam1.jpg" alt="product image" />
+          <span>adidas</span>
+          <h4>Cartoon Astronaut T-Shirts</h4>
+          <h4 class="price">$78</h4>
+          <button
+            style="
+              width: 100%;
+              padding: 0.4rem;
+              background-color: white;
+              cursor: pointer;
+              border-radius: 0.5rem;
+            "
+          >
+            To cart
+          </button>
+        </div>
+        <div class="product-cart">
+          <img src="images/products/cam1.jpg" alt="product image" />
+          <span>adidas</span>
+          <h4>Cartoon Astronaut T-Shirts</h4>
+          <h4 class="price">$78</h4>
+          <button
+            onclick="cart()"
+            style="
+              width: 100%;
+              padding: 0.4rem;
+              background-color: white;
+              cursor: pointer;
+              border-radius: 0.5rem;
+            "
+          >
+            To cart
+          </button>
+        </div>
+      </div>
+    </section>
 
-            </div>
-            <div class="product-cart">
-              <img src="images/products/cam1.jpg" alt="product image" />
-              <span>adidas</span>
-              <h4>Cartoon Astronaut T-Shirts</h4>
-              <h4 class="price">$78</h4>
-              <button style="width:100%; padding: 0.4rem; background-color: white; cursor: pointer; border-radius: 0.5rem;">To cart</button>
-            </div>
-            <div class="product-cart">
-              <img src="images/products/cam1.jpg" alt="product image" />
-              <span>adidas</span>
-              <h4>Cartoon Astronaut T-Shirts</h4>
-              <h4 class="price">$78</h4>
-              <button style="width:100%; padding: 0.4rem; background-color: white; cursor: pointer; border-radius: 0.5rem;">To cart</button>
-
-            </div>
-          </div>
-        </section>
-
-     
-      <script>
-        function increment() {
-           document.getElementById('demoInput').stepUp();
-        }
-        function decrement() {
-           document.getElementById('demoInput').stepDown();
-        }
-     </script>
-</body>
+    <script >
+      function increment() {
+        document.getElementById("demoInput").stepUp();
+      }
+      function decrement() {
+        document.getElementById("demoInput").stepDown();
+      }
+    </script>
+    <script src="./script.js"></script>
+  </body>
 </html>

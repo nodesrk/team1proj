@@ -7,7 +7,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "League Spartan", sans-serif;
-}
+  scroll-behavior: smooth;
+} 
 
 h1 {
   font-size: 50px;
@@ -376,6 +377,8 @@ height: 1.5rem;
   margin-left: 10rem;
   margin-right: 10rem;
   margin-top: 10rem;
+  padding-top: 5rem;
+
 
   min-height: 10vh;
   
@@ -390,6 +393,8 @@ height: 1.5rem;
 .bloglinks{
   margin-left: 1rem;
   justify-content: center;
+  position: fixed;
+  right: -20px;
   
   
   /* background-color: rgb(134, 134, 134); */
@@ -490,8 +495,7 @@ min-height: 50vh;
     margin:8rem ;
   }
   .Loginsection{
-    background-image: url();
-    margin:8rem ;
+    margin:3rem ;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -500,8 +504,92 @@ min-height: 50vh;
   }
   
   .Loginsection input{
-    width: 250px;
+    width: 300px;
     height: 30px;
     margin-bottom: 1rem;
     padding: 20px;
   }
+    
+  .Loginsection button{
+    width: 300px;
+    height: 30px;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: x-large;
+    border: 6px solid rgb(0, 0, 0);
+    background-color: black;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 50px;
+    padding: 15px 32px;
+ padding-bottom: 2rem;
+  }
+  .Loginsection button:hover{
+
+    border: 6px solid rgb(0, 255, 247);
+
+  }
+  .logininputandimage{
+    display: flex;
+    margin: 2rem;
+    
+    justify-content: center;
+    align-items: center;
+    
+
+  }
+  .feedback{
+
+   height: 70vh;
+   /* color: white; */
+   background-color: rgb(0, 0, 0);
+   /* background-image: url("./images/360_F_518776302_XZQkgR5kuSZyuchfvOT2jT0dhvj3E7BB.jpg"); */
+   background-repeat: no-repeat;
+   justify-content: center;
+   background-position: center;
+   background-size: cover;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   color: white;
+  }
+  .feedback h1{
+    margin-bottom: 2rem;
+    color: white;
+  }
+  .feedback form{
+
+  display: flex;
+  font-size: x-large;
+  }
+  .feedback input{
+    width: 170px;
+    height: 25px;
+    border-radius: 0.5rem;
+    background-color:transparent;
+    border-color:green ;
+    padding: 20px;
+    color: white;
+  }
+  .formhi{
+
+    display: flex;
+    flex-direction: column;
+
+    }
+    .divone{
+      display: flex;
+    }
+    .divone div{
+      margin: 1rem;
+    }
+    .divtwo input{
+    width: 100%;
+    height: 100px;
+    margin-top: 1rem;
+    color: white;
+    text-align: start;
+    }

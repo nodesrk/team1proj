@@ -28,7 +28,7 @@
               <li><a href="about.html">About</a></li>
               <li><a href="research.html">Research</a></li>
               <li><a href="login.html">Login</a></li>
-              <li><a href="research.html">Cart</a></li>
+              <li><a>Cart (<span id="cartspan">0</span>)</a></li>
             </ul>
           </nav>
          
@@ -59,8 +59,8 @@
               <h4>EOS 1500D</h4>
               <h4 class="price">$78</h4>
               
-              <button style="width:100%; padding: 0.4rem; background-color: white; cursor: pointer; border-radius: 0.5rem;">To cart</button>
             </a>
+            <button onclick="cart()" style="width:100%; padding: 0.4rem; background-color: white; cursor: pointer; border-radius: 0.5rem;">To cart</button>
           </div>
           <div class="product-cart">
             <img src="images/products/cam1.jpg" alt="product image" />
@@ -68,7 +68,7 @@
             <h4>Cartoon Astronaut T-Shirts</h4>
 
             <h4 class="price">$78</h4>
-            <button style="width:100%; padding: 0.4rem; background-color: white; cursor: pointer; border-radius: 0.5rem;">To cart</button>
+            <button onclick="cart()" style="width:100%; padding: 0.4rem; background-color: white; cursor: pointer; border-radius: 0.5rem;">To cart</button>
 
           </div>
           <div class="product-cart">
@@ -124,7 +124,7 @@
 
       <section id="off-banner" class="section-m1">
 
-        <h2>Cool camera Beautiful Memories.</h2>
+        <h2 id="bannertext">Cool camera Beautiful Memories.</h2>
       </section>
 <section id="brands" class="brandc">
   <div>
@@ -145,8 +145,8 @@
     </main>
 
     <!--footer section-->
-
     <footer>
+      <!-- feedbackpage -->
       <div id="footer">
       
           <div class="contact" style="display: flex; flex-direction: column;justify-content: center;align-items: center;">

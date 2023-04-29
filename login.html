@@ -25,31 +25,38 @@
                 <li><a  href="about.html">About</a></li>
                 <li><a href="research.html">Research</a></li>
                 <li><a class="active" href="login.html">Login</a></li>
-                <li><a href="research.html">Cart</a></li>
+                <li><a>Cart (<span id="cartspan">0</span>)</a></li>
               </ul>
             </nav>
           </div>
         </div>
       </header>
       <section class="Loginsection">
-        <h1>Login</h1>
-        <form action="">
-            <h4>Firstname:</h4>
-            <input type="text" name="" id="" placeholder="Enter Firstname">
-            <h4>Lastname:</h4>
-            <input type="text" name="" id="" placeholder="Enter Lastname">
-            <h4>Email:</h4>
-            <input type="text" name="" id="" placeholder="Enter Email">
-            <h4>Password:</h4>
-            <input type="text" name="" id="" placeholder="Enter Password">
-            <h4>Contact Number:</h4>
-            <input type="text" name="" id="" placeholder="Enter Number">
-            <h4>Address:</h4>
-            <input type="text" name="" id="" placeholder="Enter Address">
-
-
-        </form>
+          <div class="logininputandimage">
+              
+              <div style="height: 500px; margin: 2rem;">
+                <img src="./images/photo-1516724562728-afc824a36e84.jpg" alt="" style="height: 100%;">
+            </div>
+            <form name="loginform" action="" style="margin: 2rem;" onsubmit="return Validate()" >
+                <h1>Login</h1>
+                <h4>Firstname:</h4>
+                <input type="text" name="fname" id="Firstname" placeholder="Enter Firstname">
+                <h4>Lastname:</h4>
+                <input type="text" name="" id="Lastname"placeholder="Enter Lastname">
+                <h4>Email:</h4>
+                <input type="email" name="" id="email" placeholder="Enter Email">
+                <h4>Password:</h4>
+                <input type="text" name="" id="Password" placeholder="Enter Password">
+                <h4>Contact Number:</h4>
+                <input type="text" name="" id="Number" placeholder="Enter Number">
+                <p id="result">Here</p>
+                <button type="submit" value="submit">Login</button>
+    
+    
+            </form>
+        </div>
 
       </section>
+      <script src="./script.js"></script>
 </body>
 </html>
