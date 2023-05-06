@@ -593,3 +593,17 @@ min-height: 50vh;
     color: white;
     text-align: start;
     }
+
+
+    .researchsection{
+
+      margin: 2rem;
+    }
+    .landing{ 
+      height: 90%;
+      display: flex;
+
+    }
+    .landing img{
+      width: 100%;
+        }
